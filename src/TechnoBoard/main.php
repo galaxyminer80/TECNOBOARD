@@ -1,6 +1,6 @@
 <?php
 
-namespace TechnoBoard;
+namespace TecnoBoard;
 
 use pocketmine\Player;
 use pocketmine\Server;
@@ -11,12 +11,12 @@ use pocketmine\network\mcpe\protocol\SetScorePacket;
 use pocketmine\network\mcpe\protocol\types\ScorePacketEntry;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\event\player\PlayerJoinEvent;
-use TechnoBoard\Main;
+use TecnoBoard\Main;
 
 class Main extends PluginBase implements Listener{
 
     public function onEnable(){
-        $this->getLogger()->info("[TechnoBoardBoards] By HADI_KING Enabled");
+        $this->getLogger()->info("[TecnoBoard] By HADI_KING Enabled");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
 		$this->pureperms = $this->getServer()->getPluginManager()->getPlugin("PurePerms");
