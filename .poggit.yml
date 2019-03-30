@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/galaxyminer80/TECNOBOARD
+branches:
+- master
+projects:
+  TECNOBOARD:
+    path: ""
+...
