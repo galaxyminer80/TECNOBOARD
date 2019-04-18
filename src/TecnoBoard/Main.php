@@ -45,7 +45,7 @@ class Main extends PluginBase implements Listener{
         $pk = new SetDisplayObjectivePacket();
         $pk->displaySlot = "sidebar";
         $pk->objectiveName = "test";
-        $pk->displayName = "§aMINERCRAFT SV";
+        $pk->displayName = "§aMINERCLUB SV";
         $pk->criteriaName = "dummy";
         $pk->sortOrder = 0;
         $player->sendDataPacket($pk);
@@ -83,7 +83,7 @@ class Main extends PluginBase implements Listener{
         $entrie = new ScorePacketEntry();
         $entrie->objectiveName = "test";
         $entrie->type = ScorePacketEntry::TYPE_FAKE_PLAYER;
-        $entrie->customName = str_repeat(" ", 5) . "§aWELCOME TO MINERCRAFT SV" . str_repeat(" ", 3);
+        $entrie->customName = str_repeat(" ", 5) . "§aWELCOME TO MINERCLUB SV" . str_repeat(" ", 3);
         $entrie->score = 5;
         $entrie->scoreboardId = 5;
         $pk5 = new SetScorePacket();
