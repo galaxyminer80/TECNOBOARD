@@ -45,7 +45,7 @@ class Main extends PluginBase implements Listener{
         $pk = new SetDisplayObjectivePacket();
         $pk->displaySlot = "sidebar";
         $pk->objectiveName = "test";
-        $pk->displayName = "§aMINERCLUB SV";
+        $pk->displayName = "§b§lExhaust§3PE";
         $pk->criteriaName = "dummy";
         $pk->sortOrder = 0;
         $player->sendDataPacket($pk);
@@ -53,7 +53,7 @@ class Main extends PluginBase implements Listener{
         $entrie = new ScorePacketEntry();
         $entrie->objectiveName = "test";
         $entrie->type = ScorePacketEntry::TYPE_FAKE_PLAYER;
-        $entrie->customName = str_repeat(" ", 5) . "§aACCOUNT" . str_repeat(" ", 3);
+        $entrie->customName = str_repeat(" ", 5) . "§e§lACCOUNT" . str_repeat(" ", 3);
         $entrie->score = 2;
         $entrie->scoreboardId = 2;
         $pk2 = new SetScorePacket();
@@ -63,7 +63,7 @@ class Main extends PluginBase implements Listener{
         $entrie = new ScorePacketEntry();
         $entrie->objectiveName = "test";
         $entrie->type = ScorePacketEntry::TYPE_FAKE_PLAYER;
-        $entrie->customName = str_repeat(" ", 5) . "§a". $name . str_repeat(" ", 3);
+        $entrie->customName = str_repeat(" ", 5) . "§f". $name . str_repeat(" ", 3);
         $entrie->score = 3;
         $entrie->scoreboardId = 3;
         $pk3 = new SetScorePacket();
@@ -83,7 +83,7 @@ class Main extends PluginBase implements Listener{
         $entrie = new ScorePacketEntry();
         $entrie->objectiveName = "test";
         $entrie->type = ScorePacketEntry::TYPE_FAKE_PLAYER;
-        $entrie->customName = str_repeat(" ", 5) . "§aWELCOME TO MINERCLUB SV" . str_repeat(" ", 3);
+        $entrie->customName = str_repeat(" ", 5) . " " . str_repeat(" ", 3);
         $entrie->score = 5;
         $entrie->scoreboardId = 5;
         $pk5 = new SetScorePacket();
@@ -93,7 +93,7 @@ class Main extends PluginBase implements Listener{
         $entrie = new ScorePacketEntry();
         $entrie->objectiveName = "test";
         $entrie->type = ScorePacketEntry::TYPE_FAKE_PLAYER;
-        $entrie->customName = str_repeat(" ", 5) . "§a" . str_repeat(" ", 3);
+        $entrie->customName = str_repeat(" ", 5) . "§b§lMoney" . str_repeat(" ", 3);
         $entrie->score = 6;
         $entrie->scoreboardId = 6;
         $pk6 = new SetScorePacket();
@@ -103,7 +103,7 @@ class Main extends PluginBase implements Listener{
         $entrie = new ScorePacketEntry();
         $entrie->objectiveName = "test";
         $entrie->type = ScorePacketEntry::TYPE_FAKE_PLAYER;
-        $entrie->customName = str_repeat(" ", 5) . "§aMoney: §f" . $money . str_repeat(" ", 3);
+        $entrie->customName = str_repeat(" ", 5) . "§f" . $money . str_repeat(" ", 3);
         $entrie->score = 7;
         $entrie->scoreboardId = 7;
         $pk7 = new SetScorePacket();
